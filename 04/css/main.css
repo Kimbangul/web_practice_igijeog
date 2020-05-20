@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* css document */
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a{
+  color:inherit;
+  display: block;
+}
+
+body{
+  width: 1200px;
+  margin: 0 auto;
+  color: #333333;
+  background-color: #ffffff;
+  font-family: "맑은 고딕", sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+}
+
+header > .logo{
+  float: left;
+}
+
+header > .logo a{
+  width: 250px;
+  height: 100px;
+  position: relative;
+}
+
+header > .logo img{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -28.5px;
+}
+
+nav {
+  float: right;
+  height: 100px;
+}
+
+
+nav > ul.menu li{
+  margin-top: 27.5px;
+  width: 170px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #0066ad;
+  font-weight: 600;
+  float: left;
+  color: white;
+  text-align: center;
+  transition: background 0.5s, color 0.5s;
+  position: relative;
+}
+
+nav > ul.menu > li:hover{
+  background-color: #30a3f3;
+  color:rgb(255, 231, 68);
+}
+
+nav ul.submenu{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  font-size: 14px;
+}
+
+nav ul.submenu.active{
+  display: block;
+}
+
+nav ul.submenu li{
+  margin-top: 0;
+  color: white;
+  background-color: #30a3f3;
+}
+
+nav ul.submenu li:hover{
+  color: rgb(255, 231, 68);
+  background-color: #2f84bf;
+}
+
+
+
+.imgslide{
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  background-color: rgb(170, 176, 181);
+  position: relative;
+}
+
+.imgslide a{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imgslide img{
+  position: absolute;
+  top: -20px;
+}
+
+.content{
+  width: 100%;
+  height: 200px;
+
+  padding: 5px 0;
+}
+
+.tabmenu_wrap{
+  width: 400px;
+  height: 100%;
+  float:left;
+  position: relative;
+}
+
+.tabname{
+  width: 100%;
+  height: 30px;
+}
+
+.tabname .tab{
+  width: 80px;
+  height: 100%;
+  background-color:#0066ad;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+}
+
+.tabname .tab.active{
+  background-color: #30a3f3;
+}
+
+.tab_contents{
+  display: none;
+  border: 1px solid rgb(208, 208, 208);
+  padding: 15px;
+  width: 100%;
+  height: 160px;
+  background-color: white;
+}
+
+.tab_contents.active{
+  display: block;
+}
+
+.tab_contents.notice ul{
+  margin-top: 4px;
+}
+
+
+.tab_contents.notice li{
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.tab_contents.notice li:hover{
+  font-weight: bold;
+}
+
+.tab_contents.notice li span{
+  float: right;
+}
+
+
+.tab_contents.notice li:nth-child(2n){
+  background-color:  rgb(208, 208, 208);
+}
+
+.tab_contents.gallery li{
+  float: left;
+  margin: 0 16.3px;
+  margin-top: 19px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.tab_contents.gallery li:hover{
+  opacity: 0.5;
+}
+
+
+.banner{
+  width:400px;
+  height: 100%;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.banner p {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 7px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.banner img{
+  width: 380px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.banner img:hover{
+  opacity: 0.5;
+}
+
+.shortcut{
+  width: 400px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.shortcut img{
+  position: absolute;
+  top: -5px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.shortcut img:hover{
+  opacity: 0.5;
+}
+
+.shortcut p{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 7px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+
+ div#modal{
+   display: none;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.6);
+ }
+
+  div#modal.active{
+    display: block;
+  }
+
+ div.modal_layer{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+   width: 500px;
+   height: 250px;
+   padding: 20px;
+   background-color: #FFFFFF;
+ }
+
+ div.modal_title{
+   height: 50px;
+   font-weight: bold;
+   line-height: 50px;
+   text-align: center;
+ }
+
+ div.modal_contents{
+   width: 100%;
+   height: 160px;
+   padding: 10px 0 0 0;
+   text-align: center;
+   font-size: 14.5px;
+   line-height: 25px;
+ }
+
+ div.btn{
+   margin: 0 auto;
+   margin-top: 15px;
+   width: 100px;
+   height: 30px;
+   background-color: #0066ad;
+   transition: background-color 0.3s;
+   color:white;
+   line-height: 30px;
+ }
+
+ div.btn:hover{
+   background-color: #30a3f3;
+ }
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #30a3f3;
+}
+
+footer > .logo{
+  width: 300px;
+  height: 100%;
+  float:left;
+  position: relative;
+}
+
+footer > .logo img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+footer > .right_wrap{
+  width: 900px;
+  height: 100%;
+  float: left;
+}
+
+div.footer_menu{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+div.footer_menu > ul{
+  display: inline-block;
+}
+
+div.footer_menu > ul li{
+  float: left;
+  margin: 0 30px;
+}
+
+div.footer_menu > ul li:hover{
+  font-weight: bold;
+}
+
+
+div.copyright{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 13px;
+}
