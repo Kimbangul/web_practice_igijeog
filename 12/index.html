@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/jquery-1.12.3.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="js/script.js"></script>
+    <title>JUST 쇼핑몰</title>
 </head>
 <body>
         <header class="flex flex-jc-b flex-ai-c">
             <div class="logo">
-                <a href="#">logo</a>
+                <a class="flex flex-ai-c flex-jc-c" href="index.html"><img src="image/logo.png" alt="just 쇼핑몰"></a>
             </div>
 
             <nav class="menu">
@@ -52,27 +55,69 @@
         </header>
 
         <section id="slide">
-            <div class="img-box"><img src="" alt=""></div>
-            <div class="img-box"><img src="" alt=""></div>
-            <div class="img-box"><img src="" alt=""></div>
+            <div class="slide-wrap">
+                <div class="img-box">1</div>
+                <div class="img-box">2</div>
+                <div class="img-box">3</div>
+            </div>
         </section>
 
         <section id="content" class="flex">
-            <div class="tap-menu ">
-                <div class="notice"></div>
-                <div class="gallery"></div>
+           
+            <div class="tap-menu first-menu">
+                <div class="tap-menu-list">
+                    <div class="first-menu">공지사항</div>
+                    <div class="second-menu">갤러리</div>
+                </div>
+                <div class="notice">
+                    <ul class="notice-list">
+                        <li ><a href="#">공지사항1</a>  </li>
+                        <li ><a href="#">공지사항2</a>  </li>
+                        <li ><a href="#">공지사항3</a>  </li>
+                        <li><a href="#">공지사항4</a>  </li>
+                    </ul>
+                </div>
+                <div class="gallery ">
+                    <div class="img-wrap flex flex-ai-c flex-jc-c">
+                        <div class="img-box"><a href="#"></a></div>
+                        <div class="img-box"><a href="#"></a></div>
+                        <div class="img-box"><a href="#"></a></div>
+                    </div>
+
+                </div>
                 </div>
 
-                <div class="banner"><a href="#"><img src="" alt=""></a></div>
+                <div class="banner"><a href="#"></a></div>
 
-                <div class="shortcut"></div>
+                <div class="shortcut flex flex-ai-c flex-jc-c">
+
+                    <a class="flex flex-jc-c flex-ai-c" href="#">사이트 바로가기</a>
+
+                </div>
         </section>
 
         <footer class="flex">
-            <div class="logo"><a href="#"></a></div>
-            <div class="copy"></div>
-            <ul class="sns"></ul>
+            <div class="logo "><a class="flex flex-ai-c flex-jc-c" href="index.html"><img src="image/logo.png" alt="just 쇼핑몰"></a></div>
+            <div class="copy flex flex-ai-c flex-jc-c">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</div>
+            <ul class="sns flex flex-ai-c flex-jc-a">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
         </footer>
+
+        <div id="modal" class="flex flex-ai-c flex-jc-c">
+            <div class="modal-window">
+                <div class="modal-title">
+                    title
+                </div>
+                <div class="modal-content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, illo dolores distinctio fugiat odio ducimus similique quos qui sunt necessitatibus nisi facere laboriosam doloribus deleniti dignissimos laudantium architecto laborum tenetur.
+                </div>
+                <a href="#" class="btn">닫기</a>
+            </div>
+        </div>
+        
         
 
 </body>
