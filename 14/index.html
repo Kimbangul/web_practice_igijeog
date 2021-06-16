@@ -10,10 +10,10 @@
     <script src="script/script.js"></script>
 
 </head>
-<body class="flex flex-ai-c ">
+<body class="flex">
     <header>
-        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="해운대빛축제"></a></div>
-        <nav>
+        <div class="logo flex flex-ai-c"><a href="index.html"><img src="img/logo.png" alt="해운대빛축제"></a></div>
+        <nav class="flex flex-ai-c flex-jc-c">
             <ul class="depth-1">
                 <li>
                     <a href="#">이용안내</a>
@@ -60,13 +60,13 @@
             </div>
         </div>
 
-        <div class="board">
+        <div class="board flex flex-jc-c">
             <div class="tap-menu">
                 <div class="tap-name flex flex-ai-c">
-                    <a href="#">공지사항</a>
-                    <a href="#">갤러리</a>
+                    <a class="active notice" href="#">공지사항</a>
+                    <a class="gallery" href="#">갤러리</a>
                 </div>
-                <div class="notice">
+                <div class="notice active">
                     <ul>
                         <li><a class="flex flex-jc-b" href="#">공지사항1<span>2021-06-15</span></a></li>
                         <li><a class="flex flex-jc-b" href="#">공지사항2<span>2021-06-15</span></a></li>
@@ -74,7 +74,7 @@
                         <li><a class="flex flex-jc-b" href="#">공지사항4<span>2021-06-15</span></a></li>
                     </ul>
                 </div>
-                <div class="gallery flex flex-ai-c flex-jc-c">
+                <div class="gallery flex-ai-c flex-jc-c">
                     <div class="img-box"><a href="#"><img src="img/slide1.png" alt="이미지"></a></div>
                     <div class="img-box"><a href="#"><img src="img/slide1.png" alt="이미지"></a></div>
                     <div class="img-box"><a href="#"><img src="img/slide1.png" alt="이미지"></a></div>
@@ -84,19 +84,30 @@
             <div class="banner"><a href="#" class="img-box"><img src="img/slide1.png" alt="배너 이미지"></a></div>
             <div class="shortcut"><a href="#" class="img-box"><img src="img/slide2.png" alt="바로가기 이미지"></a></div>
         </div>
+        <footer class="flex flex-ai-c">
+            <div class="logo"><a href="#"><img src="img/logo-white.png" alt="해변빛축제"></a></div>
+            <div class="content">
+                <ul class="menu flex flex-ai-c flex-jc-c">
+                    <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+                <div class="copy flex flex-ai-c flex-jc-c">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED.</div>
+            </div>
+        </footer>
     </section>
-    <footer class="flex flex-ai-c">
-        <div class="logo"><a href="#"><img src="img/logo-white.png" alt="해변빛축제"></a></div>
-        <div class="content">
-            <ul class="menu">
-                <li><a href="#">메뉴1</a></li>
-            <li><a href="#">메뉴2</a></li>
-            <li><a href="#">메뉴3</a></li>
-            <li><a href="#">메뉴4</a></li>
-        </ul>
-            <div class="copy">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED.</div>
+
+    <div id="modal" class="flex-ai-c flex-jc-c">
+        <div class="modal-window">
+            <h2 class="title">lorem ipsum</h2>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quod unde at accusamus porro doloremque quo inventore magnam ipsa eveniet possimus, cum, cupiditate animi facere nisi deleniti quas ad consectetur!
+            </div>
+            <a href="#" class="close-btn">닫기</a>
         </div>
-    </footer>
+    </div>
+
 
 </body>
 </html>

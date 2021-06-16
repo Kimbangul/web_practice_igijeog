@@ -18,6 +18,16 @@ body{
     width: 1000px;
     background-color: #ffffff;
     color: #333333;
+    overflow: hidden;
+    position: relative;
+}
+
+img, a{
+    display: block;
+}
+
+.img-box img{
+    width: 100%;
 }
 
 .flex{
@@ -38,4 +48,285 @@ body{
 
 .flex-jc-b{
     justify-content: space-between;
+}
+
+
+
+header{
+    width: 200px;
+    height: 100%;
+
+}
+
+header .logo{
+    width: 100%;
+    height: 100px;
+
+    
+}
+
+header nav{
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+header nav .depth-1{
+width: 160px;
+text-align: center;
+}
+
+header nav .depth-1 > li > a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid rgb(82, 95, 211);
+    color:rgb(82, 95, 211);
+
+    font-weight: 900;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav .depth-1 > li:hover > a{
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+}
+
+header nav .depth-1 > li.active > a{
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+}
+
+header nav .depth-2 {
+    display: none;
+}
+
+header nav .depth-2 > li{  
+    background-color: rgba(82, 95, 211, 0.3);
+    color: rgb(82, 95, 211);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav .depth-2 > li:hover{
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+}
+
+header nav .depth-2 > li > a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+
+
+#content .slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#content .slide > .slider{
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+
+#content .board{
+    width: 800px;
+    height: 200px;
+    padding: 10px 0;
+}
+
+#content .board > .tap-menu{
+    width: 250px;
+    overflow: hidden;
+    height: 100%;  
+}
+
+#content .board > .tap-menu .tap-name{
+    width: 100%;
+    height: 20px;
+}
+
+#content .board > .tap-menu .tap-name > a{
+    width: 80px;
+    height: 100%;
+    font-size: 13px;
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+#content .board > .tap-menu .tap-name > a.active{
+    opacity: 1;
+}
+
+#content .board > .tap-menu .notice{
+    width: 100%;
+    height: 160px;
+   border: 1px solid rgb(82, 95, 211);
+   display: none;
+}
+
+#content .board > .tap-menu > .notice.active{
+    display: block;
+}
+
+
+#content .board > .tap-menu .notice > ul > li > a{
+    display: flex;
+
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#content .board > .tap-menu .notice > ul > li:nth-child(2n) > a{
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+}
+
+#content .board > .tap-menu .notice > ul > li > a > span{
+    font-size: 12px;
+}
+
+#content .board > .tap-menu .gallery{
+    width: 100%;
+    height: 160px;
+   border: 1px solid rgb(82, 95, 211);
+   display: none;
+}
+
+#content .board > .tap-menu > .gallery.active{
+    display: flex;
+}
+
+#content .board > .tap-menu .gallery .img-box{
+    width: 70px;
+    height: 70px;  
+    margin: 0 5px;
+    
+    
+}
+
+#content .board > .tap-menu .gallery .img-box a{
+    width: 100%;
+    height: 100%;
+}
+
+#content .board > .tap-menu .gallery .img-box img{
+    height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+#content .board .banner{
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+#content .board .shortcut{
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#content .board .banner, #content .board .shortcut{
+    padding-top: 20px;
+}
+
+#content .board .banner a, #content .board .shortcut a{
+    width: 100%;
+    height: 100%;
+}
+
+#content .board .banner .img-box img, #content .board .shortcut .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+   
+    background-color: rgb(82, 95, 211);
+    color: #fff;
+}
+
+footer .content{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(36, 45, 122);
+}
+
+footer .menu{
+    height: 50%;
+}
+
+footer .menu > li > a{
+    padding: 0 10px;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+footer .menu > li:hover > a{
+    opacity: 1;
+}
+
+footer .copy{
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+}
+
+#modal{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+
+#modal.active{
+    display: flex;
+}
+
+#modal .modal-window{
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+#modal .modal-window .title{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(36, 45, 122, 0.3);
+}
+
+#modal .modal-window .content{
+    font-size: 14px;
+}
+
+#modal .modal-window .close-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 12px;
+    background-color: rgb(36, 45, 122);
+    color: #fff;
 }
