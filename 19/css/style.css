@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+a,img{
+    display: block;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+.relative{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.flex-ai-c{
+    align-items: center;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.flex-jc-b{
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+}
+
+header > nav > .depth-1 > li{
+    position: relative;
+}
+
+header > nav > .depth-1 > li > a{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #483765;
+    border-right: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+header > nav > .depth-1 > li:hover > a{
+    background-color: #d0b6ff;
+    color: #483765;
+}
+
+header > nav .depth-2{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+header > nav .depth-2 > li > a{
+    width: 100%;
+    height: 50px;
+    background-color: #d0b6ff;
+    color: #483765;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+}
+
+header > nav .depth-2 > li:hover > a{
+    color: #d0b6ff;
+    background-color: #483765;
+}
+
+.slide{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider{
+    width: 300%;
+    height: 100%;
+    left: 0;
+}
+
+.content{
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.content .tap-name{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #483765;
+    color: #fff;
+    font-size: 13px;
+}
+
+.content > .notice, .content > .gallery{
+    width: 400px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.content > .notice > ul, .content > .gallery > .con{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #483765;
+}
+
+.content > .notice > ul{
+
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+.content > .notice > ul > li{
+    width: 100%;
+    height: 25%;
+}
+
+.content > .notice > ul > li:nth-child(2n){
+    background-color: #d0b6ff;
+    color: #483765;
+}
+
+.content > .notice > ul > li > a{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.content > .notice > ul > li > a > span{
+    font-size: 14px;
+}
+
+.content > .gallery .img-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #483765;
+    margin: 0 5px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.content > .gallery .img-box:hover{
+    opacity: 0.5;
+}
+
+.content .banner{
+    width: 380px;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #483765;
+    color: #fff;
+}
+
+footer .copy{
+    width: 800px;
+    height: 100%;
+    font-size: 13px;
+}
+
+footer .sns{
+    width: 200px;
+    height: 100%;
+}
+
+footer .sns > li{
+    font-size: 20px;
+    margin: 0 7px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+footer .sns > li:hover{
+    opacity: 0.5;
+}
+
+#modal{
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    display: none;
+}
+
+#modal.active{
+    display: flex;
+   
+}
+
+#modal .modal-window{
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    padding: 25px;
+
+}
+
+
+#modal .modal-window > h2{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#modal .modal-window > p{
+    font-size: 15px;
+}
+
+#modal .modal-window > .close-btn{
+    width: 70px;
+    height: 30px;
+    background-color: #483765;
+    color: #fff;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

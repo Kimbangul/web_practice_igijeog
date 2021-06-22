@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    color: #333333;
+    overflow: hidden;
+}
+
+a, img{
+    display: block;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.flex-jc-b{
+    justify-content: space-between;
+}
+
+.flex-ai-c{
+    align-items: center;
+}
+
+header{
+    width: 200px;
+    height: 100%;
+   
+}
+
+header > .logo{
+    width: 100%;
+    height: 150px;
+}
+
+header > .menu > .depth-1{
+ width: 180px;
+ margin: 0 auto;
+}
+
+header > .menu > .depth-1 > li > a{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    background-color: #1b4322;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header > .menu > .depth-1 > li:hover> a{
+    background-color: #ff6981;
+   
+}
+
+header > .menu .depth-2{
+    display: none;
+}
+
+header > .menu .depth-2 > li > a{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #9cc7a3;
+    color: #1b4322;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header > .menu .depth-2 > li:hover > a{
+    background-color: #ff6981;
+    color: #fff;
+}
+
+#contents{
+    width: 800px;
+}
+
+
+#contents .slide{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+
+}
+
+#contents .slide .slider{
+    width: 300%;
+    height: 100%;
+}
+
+#contents .board{
+    width: 100%;
+    height: 200px;
+
+    padding: 10px 0;
+}
+
+#contents .board .notice, #contents .board .gallery{
+    width: 300px;
+    height: 100%;
+
+    padding-right: 10px;
+}
+
+#contents .board .board-name{
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #1b4322;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contents .board .con{
+    width: 100%;
+    height: 150px;
+    background-color: #9cc7a3;
+    color: #1b4322;
+}
+
+#contents .board .notice ul{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+#contents .board .notice ul > li > a{
+    width: 100%;
+    height: 37.5px;
+    padding: 0 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contents .board .notice ul > li:nth-child(2n) > a{
+    background-color: #1b4322;
+    color: #fff;
+}
+
+#contents .board .notice ul > li > a > span{
+    font-size: 12px;
+}
+
+#contents .gallery .img-box{
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    border: 1px solid #1b4322;
+}
+
+#contents .gallery .img-box:hover{
+    opacity: 0.7;
+}
+
+#contents .shortcut{
+    width: 200px;
+    height: 100%;
+}
+
+#contents .shortcut{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#contents .shortcut:hover{
+    opacity: 0.7;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #1b4322;
+    color: #fff;
+}
+
+footer .copy{
+    width: 600px;
+    height: 100%;
+    font-size: 14px;
+}
+
+footer .footer-menu{
+    width: 200px;
+    height: 100%;
+}
+
+footer .sns{
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+}
+
+footer .sns > li{
+    margin: 0 10px;
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+footer .sns > li:hover{
+    opacity: 1;
+}
+
+footer .family-site{
+    width: 100%;
+    height: 50%;
+    color: #333333;
+}
+
+footer .family-site > select{
+    width: 80%;
+}
+
+#modal{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal.active{
+    display: flex;
+}
+
+#modal .modal-window{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+#modal .modal-window > h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3)
+}
+
+#modal .modal-window > p{
+    font-size: 15px;
+}
+
+#modal .modal-window .close-btn{
+    width: 70px;
+    height: 30px;
+    background-color: #1b4322;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}

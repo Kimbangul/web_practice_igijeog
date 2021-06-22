@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="js/jquery-1.12.3.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+    <title>세계의 미술작품</title>
+</head>
+<body class="relative">
+    <header class="relative flex flex-ai-c flex-jc-b">
+        <div class="logo"><a class="img-box flex flex-jc-c flex-ai-c" href="index.html"><img src="img/logo.png" alt="세계의 미술작품"></a></div>
+        <nav class="menu">
+            <ul class="depth-1 flex">
+                <li><a href="#">소장처별</a>
+                    <ul class="depth-2">
+                        <li><a href="#">한국</a></li>
+                        <li><a href="#">프랑스</a></li>
+                        <li><a href="#">이탈리아</a></li>
+                        <li><a href="#">독일</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">장르별</a>
+                    <ul class="depth-2">
+                        <li><a href="#">회화</a></li>
+                        <li><a href="#">판화</a></li>
+                        <li><a href="#">공예/고대유물</a></li>
+                        <li><a href="#">그 외</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">테마별</a>
+                    <ul class="depth-2">
+                        <li><a href="#">초상화/인물</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">신화/문학</a></li>
+                        <li><a href="#">일상/스포츠</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">시대별</a>
+                    <ul class="depth-2">
+                        <li><a href="#">1900년이전</a></li>
+                        <li><a href="#">1900년대</a></li>
+                        <li><a href="#">현대</a></li>
+                        <li><a href="#">그 외</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slide">
+        <div class="slider relative flex">
+            <div class="img-box"><img src="img/slide1.png" alt="이미지 슬라이드"></div>
+            <div class="img-box"><img src="img/slide2.png" alt="이미지 슬라이드"></div>
+            <div class="img-box"><img src="img/slide3.png" alt="이미지 슬라이드"></div>
+        </div>
+    </div>
+
+    <div class="content flex">
+        <div class="notice">
+            <a href="#" class="tap-name">공지사항</a>
+
+            <ul class="flex">
+                <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항1<span>2021-06-21</span></a></li>
+                <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항2<span>2021-06-21</span></a></li>
+                <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항3<span>2021-06-21</span></a></li>
+                <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항4<span>2021-06-21</span></a></li>
+            </ul>            
+        </div>
+
+        <div class="gallery">
+            <a href="#" class="tap-name">갤러리</a>
+            <div class="con flex flex-jc-c flex-ai-c">
+                <div class="img-box"><a href="#"><img src="img/img1.png" alt="갤러리 이미지"></a></div>
+                <div class="img-box"><a href="#"><img src="img/img2.png" alt="갤러리 이미지"></a></div>
+                <div class="img-box"><a href="#"><img src="img/img3.png" alt="갤러리 이미지"></a></div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <a class="img-box" href="#"><img src="img/banner.png" alt="6월 명화 특별전시 바로가기"></a>
+        </div>
+    </div>
+
+    <footer class="flex">
+        <div class="logo flex flex-ai-c flex-jc-c"><a class="img-box flex flex-ai-c flex-jc-c" href="index.html"><img src="img/logo-grayscale.png" alt="세계의 미술작품"></a></div>
+        <div class="copy flex flex-ai-c flex-jc-c">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED.</div>
+        <ul class="sns flex flex-ai-c flex-jc-c">
+            <li><a class="flex flex-ai-c flex-jc-c" href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="flex flex-ai-c flex-jc-c" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="flex flex-ai-c flex-jc-c" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <div id="modal" class="flex-ai-c flex-jc-c">
+        <div class="modal-window relative">
+            <h2>lorem ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempore, nesciunt neque consectetur at quo? Qui, sapiente asperiores? Fuga, veritatis placeat maiores soluta nesciunt doloremque dolore beatae? Qui, corporis odit.</p>
+            <a href="#" class="close-btn">닫기</a>
+        </div>
+    </div>
+</body>
+</html>
