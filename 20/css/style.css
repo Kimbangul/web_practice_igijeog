@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 1000px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+a, img{
+    display: block;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-ai-c{
+    align-items: center;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.flex-jc-b{
+    justify-content: space-between;
+}
+
+.relative{
+    position:relative;
+}
+
+.logo a{
+    width: 200px;
+    height: 100px;
+ 
+}
+
+header{
+    width: 200px;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+header nav{
+    margin-top: 20px;
+}
+
+header nav .depth-1 > li{
+    position: relative;
+}
+
+header nav .depth-1 > li > a{
+    width: 180px;
+    height: 50px;
+    background-color: #dd6333;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav .depth-1 > li:hover > a{
+    background-color: #ca0000;
+}
+
+header nav .depth-2{
+    position: absolute;
+    top: -30px;
+    left: 100%;
+    width: 100%;
+    height: 250px;
+    background-color: #fff1b9;
+    display: none;
+}
+
+header nav .depth-2 > li > a{
+ width: 100%;
+ height: 50px;
+ font-size: 14px;
+ text-align: center;
+ line-height: 50px;
+ transition: color 0.3s, background-color 0.3s;
+ color: #dd6333;
+}
+
+header nav .depth-2 > li:hover > a{
+    background-color: #ca0000;
+    color: #fff;
+}
+
+.content .slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+
+}
+
+.content .slide .slider{
+    width: 300%;
+    height: 100%;
+}
+
+.content .board{
+    padding: 10px 0;
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+  
+}
+
+.content .board .board-name{
+    display: block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #dd6333;
+    color: #fff;
+}
+
+.content .board .notice, .content .board .gallery{
+    width:300px;
+    height: 100%;
+    padding-right: 10px;
+   
+}
+
+.content .board .notice > ul, .content .board .gallery > .con{
+    width: 100%;
+    height: 155px;
+
+}
+
+.content .board .notice > ul > li{
+    width: 100%;
+    height: 25%;
+    background-color: #fff1b9;
+    color: #ca0000;
+    border-bottom: 1px dotted #ca0000;
+}
+
+.content .board .notice > ul > li:hover{
+    font-weight: 900;
+}
+
+.content .board .notice > ul > li > a{
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.content .board .notice > ul > li > a > span{
+    font-size: 13px;
+}
+
+.content .board .gallery > .con{
+    background-color: #fff1b9;
+}
+
+.content .board .gallery .img-box{
+    width: 80px;
+    height: 110px;
+    margin: 0 5px;
+   transition: opacity 0.3s;
+   opacity: 1;
+}
+
+.content .board .gallery .img-box:hover{
+    opacity: 0.6;
+}
+
+
+
+footer{
+    width: 800px;
+    height: 100px;
+    
+    background-color: #dd6333;
+    color: #fff;
+}
+
+footer .right{
+    width: 600px;
+    height: 100%;
+}
+
+
+footer .right .menu,  footer .right .copy{
+    width: 100%;
+    height: 50%;
+}
+
+footer .right .menu > li{
+    font-size: 14px;
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+}
+
+footer .right .menu > li:last-child{
+    border-right: none;
+}
+
+footer .right .copy{
+    font-size: 12px;
+}
+
+
+#modal{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+
+#modal.active{
+    display: flex;
+}
+
+#modal .modal-window{
+    width: 450px;
+    height: 300px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+#modal .modal-window > h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#modal .modal-window > p{
+    font-size: 15px;
+}
+
+#modal .modal-window > .close-btn{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    width: 70px;
+    height: 30px;
+    background-color: #dd6333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
