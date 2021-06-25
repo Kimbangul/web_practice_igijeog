@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.12.3.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Vallery Festival</title>
+</head>
+<body>
+    <div id="wrap" class="flex relative">
+        <!-- 헤더 -->
+        <header class="relative">
+            <div class="logo"><a href="index.html" class="img-box flex flex-jc-c flex-ai-c">
+                <img src="img/logo.png" alt="Vallery Festival">
+            </a></div>
+            <nav class="menu">
+                <ul class="depth-1">
+                    <li><a href="#" class="flex flex-jc-c flex-ai-c">축제소개</a>
+                        <ul class="depth-2">
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">Festival소개</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">행사장 안내</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">조직위원회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="flex flex-jc-c flex-ai-c">예약안내</a>
+                        <ul class="depth-2">
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">예약하기</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">예약확인/취소</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">단체예약문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="flex flex-jc-c flex-ai-c">아티스트</a>
+                        <ul class="depth-2">
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">고릴라즈</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">메이저 레이저</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">아우스게인</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">타임 로드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="flex flex-jc-c flex-ai-c">커뮤니티</a>
+                        <ul class="depth-2">
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">공지사항</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">사진갤러리</a></li>
+                            <li><a href="#" class="flex flex-jc-c flex-ai-c">영상갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 콘텐츠 영역 -->
+        <div id="contents">
+            <!-- 이미지 슬라이드 -->
+            <div id="slide">
+                <div class="slider relative flex">
+                    <div class="img-box"><img src="img/slide1.png" alt="이미지 슬라이드"></div>
+                    <div class="img-box"><img src="img/slide2.png" alt="이미지 슬라이드"></div>
+                    <div class="img-box"><img src="img/slide3.png" alt="이미지 슬라이드"></div>
+                </div>
+            </div>
+
+            <!-- 공지사항, 갤러리, 바로가기 영역 -->
+            <div id="board" class="flex">
+                <!-- 공지사항 -->
+                <div class="notice">
+                    <span class="tap-name">공지사항</span>
+                    <ul>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항1<span>2021-06-25</span></a></li>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항2<span>2021-06-25</span></a></li>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항3<span>2021-06-25</span></a></li>
+                        <li><a href="#" class="flex flex-ai-c flex-jc-b">공지사항4<span>2021-06-25</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- 갤러리 -->
+                <div class="gallery">
+                    <span class="tap-name">갤러리</span>
+                    <div class="con flex flex-jc-c flex-ai-c">
+                        <div class="img-box"><a href="#"><img src="img/img1.png" alt="갤러리 이미지"></a></div>
+                        <div class="img-box"><a href="#"><img src="img/img2.png" alt="갤러리 이미지"></a></div>
+                        <div class="img-box"><a href="#"><img src="img/img3.png" alt="갤러리 이미지"></a></div>
+                    </div>
+                </div>
+
+                <!-- 바로가기 -->
+                <div class="short-cut">
+                    <a class="img-box" href="#">
+                        <img src="img/shortcut.png" alt="행사정보 바로가기">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 푸터 영역 -->
+            <footer class="flex">
+                <div class="logo"><a href="index.html" class="img-box flex flex-jc-c flex-ai-c">
+                    <img src="img/logo-white.png" alt="Vallery Festival">
+                </a></div>
+                <div class="copy flex flex-ai-c flex-jc-c">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED.</div>
+                <div class="family-site flex flex-jc-c flex-ai-c">
+                    <select name="family-site" id="family-site">
+                        <option value="site1">패밀리사이트1</option>
+                        <option value="site2">패밀리사이트2</option>
+                        <option value="site3">패밀리사이트3</option>
+                    </select>
+                </div>
+            </footer>
+        </div>
+        <!-- 모달 -->
+        <div id="modal" class="flex-jc-c flex-ai-c">
+            <div class="modal-window relative">
+                <div class="modal-content">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem quo corrupti vero distinctio consequuntur cumque sunt saepe, quasi aperiam laborum totam officiis pariatur, a modi eveniet corporis quae voluptatem.</p>
+                </div>               
+                <a href="#" class="close-btn">닫기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
